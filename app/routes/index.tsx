@@ -6,6 +6,7 @@ export default function Index() {
 
     useEffect(() => {
         navigate("/home")
-        navigate("/surpise")
+        navigate("/surprise")
+        navigate("/result")
     })
 }

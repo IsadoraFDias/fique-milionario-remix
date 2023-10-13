@@ -21,7 +21,7 @@ export default function Home() {
                         <Link to="/surprise">Sortear</Link>
                         </li>
                         <li>
-                            <a href="#">Resultados</a>
+                            <Link to="/result">Resultados</Link>
                         </li>
                         <li>
                             <a href="#">Contato</a>

@@ -61,7 +61,7 @@ export default function Surprise() {
             <header id="titulo">Fique milionário</header>
             <section className="container">
                 <div>
-                    <p>Digite qual o número do jogo desejado:</p>
+                    <p>Digite o número do jogo desejado:</p>
                     <ol>
                         <li>Mega-sena</li>
                         <li>Quina</li>
