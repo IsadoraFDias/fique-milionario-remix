@@ -51,6 +51,7 @@ export default function Result() {
             await axios.delete(`https://api-fique-milionario.onrender.com/resultado/${loteria}/${concurso}`);
             setResultado('');
             setLoteria('');
+            setConcurso('');
             setDisable(false);
         } catch (error) {
             console.error(error);
