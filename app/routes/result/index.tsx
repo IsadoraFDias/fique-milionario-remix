@@ -2,6 +2,7 @@ import React, { ChangeEvent, useEffect, useState } from "react"
 import styles from './styles.css';
 import { LinksFunction } from "@remix-run/node";
 import axios from "axios";
+import BackButton from "../../components/BackButton";
 
 export const links: LinksFunction = () => {
     return [
@@ -36,7 +37,7 @@ export default function Result() {
 
     const handleGenerateClick = async () => {
         try {
-            const response = await axios.post(`http://localhost:8080/resultado/${loteria}/${concurso}`);
+            const response = await axios.post(`https://api-fique-milionario.onrender.com/resultado/${loteria}/${concurso}`);
             const resultadoString = response.data.join(' - ');
             setResultado(resultadoString);
             setDisable(true);
@@ -47,7 +48,7 @@ export default function Result() {
 
     const handleClearClick = async () => {
         try {
-            await axios.delete(`http://localhost:8080/resultado/${loteria}/${concurso}`);
+            await axios.delete(`https://api-fique-milionario.onrender.com/resultado/${loteria}/${concurso}`);
             setResultado('');
             setLoteria('');
             setDisable(false);
@@ -59,6 +60,7 @@ export default function Result() {
 
     return (
         <>
+        <BackButton />
             <header id="titulo">Fique milionário</header>
             <section className="container">
                 <div>

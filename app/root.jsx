@@ -1,4 +1,7 @@
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react'
+import {links as rootLinks} from './utils/links/root'
+
+export let links = rootLinks
 
 export default function App() {
     return (
