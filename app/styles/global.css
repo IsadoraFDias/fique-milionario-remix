@@ -28,6 +28,13 @@ body {
 #limpar:hover {
     color: #FFA500;
 }
+
+.titulo-grande {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFA500;
+  }
 .resultado {
     display: flex;
     flex-direction: column;
@@ -51,3 +58,14 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .textContact {
+    line-height: 30px;
+    text-align: center;
+  }

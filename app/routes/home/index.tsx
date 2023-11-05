@@ -24,7 +24,7 @@ export default function Home() {
                             <Link to="/result">Resultados</Link>
                         </li>
                         <li>
-                            <a href="#">Contato</a>
+                            <Link to="/contact">Contato</Link>
                         </li>
                     </ul>
                 </nav>
