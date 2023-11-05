@@ -18,12 +18,12 @@ import type { MetaFunction } from "@remix-run/node";
       viewport: "width=device-width,initial-scale=1",
     }
   ]);
-  
+
   export default function App() {
     return (
       <html>
         <head>
-          <title>TEste</title>
+          <title>Fique Milionário</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <Meta />
           <Links />
